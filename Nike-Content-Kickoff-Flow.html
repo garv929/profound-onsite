@@ -258,6 +258,16 @@ td{padding:12px;border-top:1px solid var(--rule);vertical-align:top;font-size:15
 .tools td:first-child{font-weight:600;width:24%}
 .st{display:inline-grid;place-items:center;width:26px;height:26px;background:var(--navy);color:#fff;font-weight:600;font-size:13px;border-radius:2px}
 @media print{.sage>div{break-inside:avoid}.tools{min-width:0}.st{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.goals{display:flex;flex-direction:column;border-top:1px solid var(--rule-strong)}
+.goal{display:grid;grid-template-columns:44px minmax(0,1.3fr) minmax(0,1fr);gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--rule)}
+.gn{font-family:var(--display);font-size:30px;line-height:1;color:var(--navy)}
+.gq{display:flex;flex-direction:column;gap:4px}
+.gq b{font-family:var(--display);font-weight:500;font-size:20px;line-height:1.3}
+.ga{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.gt{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.gt span{font-size:13px;border:1px solid var(--navy);color:var(--navy);border-radius:999px;padding:2px 10px;white-space:nowrap}
+@media (max-width:720px){.goal{grid-template-columns:36px minmax(0,1fr)}.gt{grid-column:2;justify-content:flex-start}}
+@media print{.goal{break-inside:avoid}}
 </style>
 
 </head>
@@ -473,17 +483,12 @@ td{padding:12px;border-top:1px solid var(--rule);vertical-align:top;font-size:15
     <h2 class="sec-title"><span class="n">2.2</span>Your goals</h2>
     <p class="claim">Our starting assumptions: five questions your team owns, and where Profound helps answer each</p>
   </div>
-  <div class="tablebox">
-    <table class="heat">
-      <thead><tr><th>#</th><th>Your question</th><th class="c">Prompt Volumes</th><th class="c">Answer Engine Insights</th><th class="c">Shopping</th><th class="c">Agent Analytics</th><th class="c">Context Manager</th><th class="c">AI Marketer and Agents</th></tr></thead>
-      <tbody>
-        <tr><td class="num">1</td><td class="pp"><b>Does AI recommend our products?</b><span>Product page copy</span></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td><td class="c"></td><td class="c"></td><td class="c"></td></tr>
-        <tr><td class="num">2</td><td class="pp"><b>Is our content the source AI trusts?</b><span>Blog and editorial</span></td><td class="c"></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td></tr>
-        <tr><td class="num">3</td><td class="pp"><b>Is AI saying the right things about Nike?</b><span>Brand voice and accuracy</span></td><td class="c"></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td><td class="c"></td><td class="c"></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td><td class="c"></td></tr>
-        <tr><td class="num">4</td><td class="pp"><b>Where are competitors beating us?</b><span>Competitive position</span></td><td class="c"></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td><td class="c"></td><td class="c"></td><td class="c"></td><td class="c"></td></tr>
-        <tr><td class="num">5</td><td class="pp"><b>Did our content work?</b><span>Proving impact to leadership</span></td><td class="c"></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td><td class="c"></td><td class="c"><span class="hit" role="img" aria-label="Yes"></span></td><td class="c"></td><td class="c"></td></tr>
-      </tbody>
-    </table>
+  <div class="goals" role="list">
+    <div class="goal" role="listitem"><span class="gn">1</span><div class="gq"><span class="ga">Product page copy</span><b>Does AI recommend our products?</b></div><div class="gt"><span>Answer Engine Insights</span><span>Shopping</span><span>Prompt Volumes</span></div></div>
+    <div class="goal" role="listitem"><span class="gn">2</span><div class="gq"><span class="ga">Blog and editorial</span><b>Is our content the source AI trusts?</b></div><div class="gt"><span>Answer Engine Insights</span><span>AI Marketer and Agents</span></div></div>
+    <div class="goal" role="listitem"><span class="gn">3</span><div class="gq"><span class="ga">Brand voice and accuracy</span><b>Is AI saying the right things about Nike?</b></div><div class="gt"><span>Answer Engine Insights</span><span>Context Manager</span></div></div>
+    <div class="goal" role="listitem"><span class="gn">4</span><div class="gq"><span class="ga">Competitive position</span><b>Where are competitors beating us?</b></div><div class="gt"><span>Answer Engine Insights</span></div></div>
+    <div class="goal" role="listitem"><span class="gn">5</span><div class="gq"><span class="ga">Proving impact to leadership</span><b>Did our content work?</b></div><div class="gt"><span>Agent Analytics</span><span>Answer Engine Insights</span></div></div>
   </div>
   <div class="ask turn">
     <span class="lbl">Your turn · Over to you</span>
