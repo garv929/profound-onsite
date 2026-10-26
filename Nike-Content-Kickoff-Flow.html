@@ -247,6 +247,18 @@ td{padding:12px;border-top:1px solid var(--rule);vertical-align:top;font-size:15
 }
 @media (max-width:640px){.ph{white-space:normal}}
 @media print{.flow{break-inside:avoid;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+.sage{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.sage>div{background:var(--sheet);border:1px solid var(--rule);border-top:3px solid var(--navy);padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.sage .ltr{font-family:var(--display);font-size:40px;line-height:1;color:var(--navy)}
+.sage b{font-family:var(--display);font-weight:600;font-size:19px}
+.sage .out{margin-top:auto;padding-top:10px;border-top:1px dashed var(--rule);font-size:13.5px;color:var(--good);font-weight:500}
+@media (max-width:900px){.sage{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.sage{grid-template-columns:1fr}}
+.tools{min-width:560px}
+.tools td:first-child{font-weight:600;width:24%}
+.tools th:last-child,.tools td:last-child{width:70px;text-align:center}
+.st{display:inline-grid;place-items:center;width:26px;height:26px;background:var(--navy);color:#fff;font-weight:600;font-size:13px;border-radius:2px}
+@media print{.sage>div{break-inside:avoid}.tools{min-width:0}.st{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
 
 </head>
@@ -416,21 +428,36 @@ td{padding:12px;border-top:1px solid var(--rule);vertical-align:top;font-size:15
 
 
 
-<!-- ============ 2.1 PLATFORM ============ -->
+<!-- ============ 2.1 PLATFORM: SAGE + TOOLS ============ -->
 <section id="platform">
   <div class="sec-head">
     <h2 class="sec-title"><span class="n">2.1</span>Profound at a glance</h2>
-    <p class="claim">Know the questions, see if you're getting through the gates, fix what's blocking you, and prove it worked</p>
+    <p class="claim">SAGE: Profound's system for doing AEO, on repeat</p>
   </div>
-  <div class="strip strip4" role="list" aria-label="Platform loop">
-    <div class="stage" role="listitem"><div class="top"><span class="ref">1</span><b>Find</b></div><span class="who">Prompt Volumes</span><span>Step one, the ask: the questions people actually ask AI, so we know which answers are worth winning</span></div>
-    <div class="hand" aria-hidden="true"><span class="arr">→</span></div>
-    <div class="stage" role="listitem"><div class="top"><span class="ref">2</span><b>See</b></div><span class="who">Answer Engine Insights</span><span>Are you getting through the gates? Whether Nike makes it into the answer, how it's described, which pages get cited, and who gets in instead</span></div>
-    <div class="hand" aria-hidden="true"><span class="arr">→</span></div>
-    <div class="stage" role="listitem"><div class="top"><span class="ref">3</span><b>Act</b></div><span class="who">Context Manager, AI Marketer and Agents</span><span>Make pages fetchable, chosen and extractable, in Nike's voice, with your team's review</span></div>
-    <div class="hand" aria-hidden="true"><span class="arr">→</span></div>
-    <div class="stage" role="listitem"><div class="top"><span class="ref">4</span><b>Prove</b></div><span class="who">Agent Analytics</span><span>Which AI agents actually reach Nike.com (gate one, in real data), and the traffic they send back</span></div>
+  <div class="sage" role="list" aria-label="The SAGE framework">
+    <div role="listitem"><span class="ltr">S</span><b>Setup</b><span>Decide what you're tracking and why.</span><span class="out">You get: a baseline you can trust</span></div>
+    <div role="listitem"><span class="ltr">A</span><b>Analyze</b><span>Find where you're winning and losing, and which gates you're failing.</span><span class="out">You get: a gap list</span></div>
+    <div role="listitem"><span class="ltr">G</span><b>Generate</b><span>Turn gaps into shipped content that passes the gates.</span><span class="out">You get: published content</span></div>
+    <div role="listitem"><span class="ltr">E</span><b>Engineer</b><span>Make what worked repeatable.</span><span class="out">You get: a system that compounds</span></div>
   </div>
+  <p class="repl">It's a loop, not a checklist: after Engineer, we go back to Setup with better data.</p>
+
+  <span class="sub">The tools, and where each one fits</span>
+  <div class="tablebox">
+    <table class="tools">
+      <thead><tr><th>Tool</th><th>What it does</th><th>SAGE</th></tr></thead>
+      <tbody>
+        <tr><td>Prompt Volumes</td><td>Shows the real questions people ask AI, and how often, so we track the prompts that matter</td><td><span class="st">S</span></td></tr>
+        <tr><td>Context Manager</td><td>The central store of what Profound knows about Nike: brand voice, products, guidelines</td><td><span class="st">S</span></td></tr>
+        <tr><td>Answer Engine Insights</td><td>Shows how Nike shows up across ChatGPT, Perplexity, Gemini and AI Overviews: visibility, citations, sentiment, competitors</td><td><span class="st">A</span></td></tr>
+        <tr><td>Shopping</td><td>Shows how Nike products appear when AI answers turn into product recommendations</td><td><span class="st">A</span></td></tr>
+        <tr><td>AI Marketer</td><td>Profound's AI marketing assistant, grounded in Context Manager, that drafts and optimizes content in Nike's voice</td><td><span class="st">G</span></td></tr>
+        <tr><td>Agent Analytics</td><td>Shows which AI agents visit Nike.com and the AI referral traffic they send back</td><td><span class="st">G</span></td></tr>
+        <tr><td>Agents</td><td>Automations built from a plain-English description that run a workflow on repeat, with human review</td><td><span class="st">E</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
   <span class="sub">Four words you'll hear me use</span>
   <div class="principles">
     <div><b>Visibility</b><span>How often Nike appears in AI answers to the prompts we track.</span></div>
@@ -438,6 +465,7 @@ td{padding:12px;border-top:1px solid var(--rule);vertical-align:top;font-size:15
     <div><b>Citation</b><span>A page the AI uses as a source for its answer.</span></div>
     <div><b>Sentiment</b><span>Whether the AI describes Nike positively, neutrally or negatively.</span></div>
   </div>
+  <p class="repl">SAGE and tool definitions: Profound University (Profound 101) and Profound's glossary.</p>
 </section>
 
 <!-- ============ 2.2 YOUR GOALS ============ -->
