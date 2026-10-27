@@ -286,7 +286,7 @@ td{padding:12px;border-top:1px solid var(--rule);vertical-align:top;font-size:15
 <section id="gaps">
   <div class="sec-head">
     <h2 class="sec-title"><span class="n">2.1</span>Biggest gaps and what changes</h2>
-    <p class="claim"><span class="ph">headline: which gaps to close first, and why</span></p>
+    <p class="claim">Setup already works. The gaps are in the customer's inputs, in proving value, and in what happens after the first win.</p>
   </div>
 
   <div class="tablebox">
@@ -306,27 +306,135 @@ td{padding:12px;border-top:1px solid var(--rule);vertical-align:top;font-size:15
     </table>
   </div>
   <p class="repl"><b>Note</b>Use past deployments to help with things such as creating the initial prompt set and context. Example: Nike Content starts from the prompts Nike already tracks in Profound.</p>
+  <span class="sub">What's different about implementing an AI marketing platform</span>
+  <div class="principles">
+    <div><b>Output depends on customer inputs</b><span>Aim and Agents are only as good as the prompts and context the customer provides. Weak inputs mean weak output, and the customer blames the product.</span></div>
+    <div><b>Value is invisible without IT</b><span>Visibility moves inside AI answers. Without Agent Analytics, the customer can't tie their work to traffic on their own site.</span></div>
+    <div><b>The ground keeps moving</b><span>Answer engines change and the prompts that matter drift. Setup is a loop (SAGE), not a one-time task.</span></div>
+    <div><b>AI output needs trust</b><span>Agents re-reason each run, so output varies. Teams adopt it once review steps fit how they already publish.</span></div>
+  </div>
+
+  <span class="sub">Close these three first</span>
+  <div class="tl">
+    <div class="row">
+      <div class="when"><span class="n">1</span><b>One tracker, one definition of success</b></div>
+      <div class="step"><p>Every other fix depends on it. Without the same steps, owners and done criteria for every account, I can't see stalls across dozens of accounts, and there's no baseline to prove ROI against.</p></div>
+    </div>
+    <div class="row">
+      <div class="when"><span class="n">2</span><b>Inputs done by day 14</b></div>
+      <div class="step"><p>Prompt set approved, Context Manager loaded, Agent Analytics connected. These are the three stalls in the brief, and all three sit on the customer's side. Profound drafts first, the customer approves, and nobody starts from a blank page.</p></div>
+    </div>
+    <div class="row">
+      <div class="when"><span class="n">3</span><b>Plan for the habit cliff</b></div>
+      <div class="step"><p>About 40% stall right after first value, when the keys are handed over. So handover becomes a phase (days 57 to 84) with a set weekly routine and fading coaching, not a single moment.</p></div>
+    </div>
+  </div>
 </section>
 
 <section id="process">
   <div class="sec-head">
     <h2 class="sec-title"><span class="n">2.2</span>The redesigned process</h2>
-    <p class="claim"><span class="ph">what runs live vs. self-serve, and why</span></p>
+    <p class="claim">Live time goes where judgment or buy-in is needed. Everything that's just information goes async.</p>
   </div>
+
+  <div class="principles three">
+    <div><b>Live 1:1</b><span>Only for decisions specific to one customer: goals, owners, their prompts, their results.</span></div>
+    <div><b>Live group (cohorts)</b><span>Customers starting the same month learn the same skills together. Same quality, a fraction of the hours.</span></div>
+    <div><b>Async and self-serve</b><span>Guides, templates, short videos and University. Customers move at their own pace, and nothing waits on a meeting.</span></div>
+  </div>
+
+  <div class="tl">
+    <div class="row">
+      <div class="when"><span class="n">1</span><b>Set up</b><span>Days 1–14 · checkpoint day 14</span></div>
+      <div class="step"><div class="two">
+        <div class="col ai"><span class="lbl">Live</span><ul><li>1:1 kickoff: goals, metrics, champion, budget owner, IT contact</li><li>1:1 prompt brainstorm on a drafted starter set</li><li>Cohort workshop: platform basics</li></ul></div>
+        <div class="col team"><span class="lbl">Async</span><ul><li>IT setup guide on day 0, ready to forward</li><li>Starter prompt set drafted from past deployments</li><li>Context Manager checklist</li><li>Profound University path</li></ul></div>
+      </div></div>
+    </div>
+    <div class="row">
+      <div class="when"><span class="n">2</span><b>First value</b><span>Days 15–56 · checkpoint day 56</span></div>
+      <div class="step"><div class="two">
+        <div class="col ai"><span class="lbl">Live</span><ul><li>Cohort workshops: find gaps, read Agent Analytics</li><li>1:1 working session: one gap to one published page, on their content</li><li>Weekly group office hours</li></ul></div>
+        <div class="col team"><span class="lbl">Async</span><ul><li>Baseline report at day 14</li><li>Prompt refresh at day 30, drafted for approval</li><li>Short videos per workflow</li></ul></div>
+      </div></div>
+    </div>
+    <div class="row">
+      <div class="when"><span class="n">3</span><b>Habit</b><span>Days 57–84 · checkpoint day 84</span></div>
+      <div class="step"><div class="two">
+        <div class="col ai"><span class="lbl">Live</span><ul><li>Coaching every two weeks: they lead, I coach</li><li>1:1 results review with the budget owner, then a warm handover to the EM</li></ul></div>
+        <div class="col team"><span class="lbl">Async</span><ul><li>Weekly routine template: review, pick gaps, create, publish</li><li>Alerts and recurring Workflows set up</li><li>Monthly "what's new" webinar, since University lags the product</li></ul></div>
+      </div></div>
+    </div>
+  </div>
+  <p class="repl"><b>Who owns what</b>I own onboarding from kickoff to day 84. The EM joins the kickoff and the day 84 review, and owns the account after that.</p>
 </section>
 
 <section id="volume">
   <div class="sec-head">
     <h2 class="sec-title"><span class="n">2.3</span>Running it at volume</h2>
-    <p class="claim"><span class="ph">tracking every account, where AI helps, the 48 hours after a stall</span></p>
+    <p class="claim">One board for every account, a weekly review of exceptions, and AI doing the drafting.</p>
+  </div>
+
+  <span class="sub">The tracker: one row per account</span>
+  <div class="tablebox">
+    <table class="ba">
+      <thead><tr><th>Field</th><th>What it holds</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Phase and checkpoint</td><td class="now">Set up / First value / Habit; green, amber or red at days 14, 56, 84</td><td>Same definition of done for every account</td></tr>
+        <tr><td>Next action</td><td class="now">One action, with a due date</td><td>Every account always has a next step</td></tr>
+        <tr><td>Owner</td><td class="now">Me, the EM, or the customer (by name)</td><td>Shows who's actually blocking</td></tr>
+        <tr><td>Inputs status</td><td class="now">Prompts approved, context loaded, Agent Analytics connected</td><td>The three most common stalls, visible at a glance</td></tr>
+        <tr><td>Signals</td><td class="now">Last login, sessions attended, overdue customer tasks</td><td>Feeds the early-warning triggers</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="repl"><b>Tool</b>Whatever CS or CRM tool the team already uses, so EMs see the same board. Saved views: overdue, waiting on customer, checkpoints this week. I review red and amber every Monday.</p>
+
+  <span class="sub">Where AI takes work off my plate</span>
+  <div class="principles">
+    <div><b>Starter prompt sets</b><span>Drafted from the customer's site, industry and past deployments. I review instead of writing.</span></div>
+    <div><b>Context Manager starter pack</b><span>Drafted from the customer's public brand pages for them to approve.</span></div>
+    <div><b>Call notes to tracker</b><span>Recaps and next actions drafted from call notes, then the tracker updated.</span></div>
+    <div><b>Daily health digest</b><span>A scheduled Agent flags accounts that hit a trigger, so I start each day with a short list.</span></div>
+  </div>
+
+  <span class="sub">The 48 hours after an account stalls</span>
+  <div class="tl">
+    <div class="row">
+      <div class="when"><span class="n">0h</span><b>Trigger fires</b></div>
+      <div class="step"><p>For example: IT not connected by day 10, prompts not approved by day 10, no logins for 7 days, a missed working session, or the champion leaving.</p></div>
+    </div>
+    <div class="row">
+      <div class="when"><span class="n">24h</span><b>Diagnose and make it easy</b></div>
+      <div class="step"><p>Find which step stalled and whose it is. Message the champion with one small, specific ask, not "just checking in." Offer to take work off them: "I'll join a 15-minute call with IT" or "I've drafted the prompts, can you approve by Friday?"</p></div>
+    </div>
+    <div class="row">
+      <div class="when"><span class="n">48h</span><b>Escalate or reset</b></div>
+      <div class="step"><p>No reply: go to the second contact, and bring in the EM or budget owner. If the cause is structural, like a new champion, reset owners and dates in the tracker so the plan stays real.</p></div>
+    </div>
   </div>
 </section>
 
 <section id="ttv">
   <div class="sec-head">
     <h2 class="sec-title"><span class="n">2.4</span>Successful implementation and time to value</h2>
-    <p class="claim"><span class="ph">what must be true, how it's tracked, how it catches disengagement early</span></p>
+    <p class="claim">Success means the platform is set up and the team runs it without me. Time to value is days from kickoff to the first published page that closes a Profound gap.</p>
   </div>
+
+  <div class="strip" role="list" aria-label="Checkpoints">
+    <div class="stage" role="listitem"><div class="top"><span class="ref">14</span><b>Access and setup</b></div><span class="who">Platform is ready</span><span>Prompts approved and tracking. Context Manager has starter sources. Agent Analytics connected. Competitors added. Baseline captured.</span></div>
+    <div class="hand" aria-hidden="true"><span class="arr">→</span></div>
+    <div class="stage" role="listitem"><div class="top"><span class="ref">56</span><b>Early value</b></div><span class="who">Team is using it</span><span>First content published from a gap (time to value). Named users active weekly. Team reads dashboards without help.</span></div>
+    <div class="hand" aria-hidden="true"><span class="arr">→</span></div>
+    <div class="stage" role="listitem"><div class="top"><span class="ref">84</span><b>Habit</b></div><span class="who">It runs without me</span><span>Weekly routine running. Alerts and Workflows live. Results shown to the budget owner against the baseline.</span></div>
+  </div>
+
+  <span class="sub">Catching disengagement early</span>
+  <div class="two">
+    <div class="col ai"><span class="lbl">Leading signals, checked weekly</span><ul><li>Customer tasks overdue in the tracker</li><li>Logins by named users, not just any user</li><li>Working sessions missed or rescheduled</li><li>Agent and Workflow runs after day 56</li></ul></div>
+    <div class="col team"><span class="lbl">Why it works</span><ul><li>Checkpoints show a problem too late</li><li>A missed prompt approval on day 10 is a day 84 failure in the making</li><li>Weekly signals leave time to step in during onboarding</li></ul></div>
+  </div>
+  <p class="repl"><b>Program metrics</b>Median time to value, share of accounts green at each checkpoint, and share still active weekly 30 days after handover. That last one is the habit cliff, measured.</p>
 </section>
 
 </main>
