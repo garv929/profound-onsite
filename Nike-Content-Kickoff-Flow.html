@@ -269,6 +269,8 @@ td{padding:12px;border-top:1px solid var(--rule);vertical-align:top;font-size:15
 @media (max-width:720px){.goal{grid-template-columns:36px minmax(0,1fr)}.gt{grid-column:2;justify-content:flex-start}}
 @media print{.goal{break-inside:avoid}}
 .phase-goal{background:#E8EAF4;border-left:3px solid var(--navy);padding:12px 16px;font-family:var(--display);font-size:18px;font-weight:500;line-height:1.35;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.ba tr.now-row td{background:#E8EAF4;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.ba tr.now-row td:first-child{box-shadow:inset 3px 0 0 var(--navy)}
 </style>
 
 </head>
@@ -619,8 +621,8 @@ td{padding:12px;border-top:1px solid var(--rule);vertical-align:top;font-size:15
     <table class="ba">
       <thead><tr><th>What</th><th>Owner</th><th>By</th></tr></thead>
       <tbody>
-        <tr><td>Name the champion, budget owner and IT contact</td><td class="now">Nike Content</td><td>This week</td></tr>
-        <tr><td>Send prompt inputs: customer questions, priority categories, competitors</td><td class="now">Nike Content</td><td>Friday</td></tr>
+        <tr class="now-row"><td>Name the champion, budget owner and IT contact</td><td class="now">Nike Content</td><td>This week</td></tr>
+        <tr class="now-row"><td>Send prompt inputs: customer questions, priority categories, competitors</td><td class="now">Nike Content</td><td>Friday</td></tr>
         <tr><td>Share voice guidelines and messaging pillars for Context Manager</td><td class="now">Nike Content</td><td><span class="ph">date</span></td></tr>
         <tr><td>Draft prompt set</td><td class="now">Profound</td><td><span class="ph">date</span></td></tr>
         <tr><td>Approve prompt set</td><td class="now">Nike Content</td><td>Within a week of the draft</td></tr>
